@@ -1,0 +1,94 @@
+:root {
+  --color-gold: #b2944d;
+  --color-gold-soft: #dfcf9d;
+  --color-charcoal: #1a1a1a;
+  --color-ivory: #fdfcf8;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-arabic: "Amiri", serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-serif);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body::selection {
+  background: rgba(178, 148, 77, 0.2);
+  color: var(--color-charcoal);
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-serif);
+}
+
+.navbar,
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.95rem;
+}
+
+.container {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.page-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.page-content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.page-content p {
+  margin: 0 0 1.25rem;
+  line-height: 1.7;
+  color: #4b4b4b;
+}
+
+.page-content a {
+  color: var(--color-gold);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.page-content a:hover {
+  text-decoration: underline;
+}
+
+/* Custom Scrollbar Premium */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-ivory);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(178, 148, 77, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(178, 148, 77, 0.5);
+}
